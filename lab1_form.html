@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Form Submission</h1>
+	<form>
+		<fieldset style="width: 350px;">
+			<legend>Details</legend>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" placeholder="Enter your name" maxlength="25" required><br>
+			<label for="email">E-mail:</label><br>
+			<input type="text" id="email" name="email" value="test@example.com" required autofocus><br>
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password" required="" minlength="6" maxlength="10"><br>
+		</fieldset>
+		<label for="category">Category:</label><br>
+		<select id="category" required>
+			<option>Student</option>
+			<option>Employee</option>
+			<option selected>Freelancer</option>
+		</select><br>
+		<label for="date">Event date:</label><br>
+		<input type="date" id="date" name="Event date" required><br>
+		<label for="tickets">Tickets:</label><br>
+		<input type="radio" id="tickets" name="tickets"required>1 ticket
+		<input type="radio" id="tickets" name="tickets"required checked>2 tickets
+		<input type="radio" id="tickets" name="tickets"required>3 tickets<br>
+		<label for="pay">Payement:</label><br>
+		<input type="checkbox" id="pay" name="On-pay"required>Online Payement<br>
+		<label for="notes">Notes:</label><br>
+		<textarea rows="5" id="notes" cols="50" name="notes" placeholder="Enter something..."></textarea><br>
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+</html>
